@@ -1,6 +1,5 @@
 
-import _2_CreatingAndDestroyingObjects.Item2.Pizza;
-
+import _2_CreatingAndDestroyingObjects.Item2.*;
 // import _2_CreatingAndDestroyingObjects.Item1.*;
 
 // public class Main {
@@ -85,17 +84,30 @@ import _2_CreatingAndDestroyingObjects.Item2.Pizza;
 //     }
 // }
 
+// public class Main {
+//     public static void main(String[] args) {
+//         Pizza p = Pizza.builder()
+//                 .addTopping("Cheese")
+//                 .addTopping("Pepperoni")
+//                 .setSize("Large")
+//                 .setCrustType("Thin")
+//                 .build();
+//         System.out.println(p.toString());
+//         Pizza p2 = Pizza.builder().addTopping("Potato").addTopping("Mushroom").setSize("Medium")
+//                 .setCrustType("Thick        ").build();
+//         System.out.println(p2.toString());
+//     }
+
 public class Main {
+
     public static void main(String[] args) {
-        Pizza p = Pizza.builder()
-                .addTopping("Cheese")
-                .addTopping("Pepperoni")
-                .setSize("Large")
-                .setCrustType("Thin")
+        Car car = Car.builder()
+                .addModel("Toyota Camry")
+                .addColor("Red")
+                .addEngineType("Hybrid")
+                .addOptionalFeatures("Sunroof")
+                .addOptionalFeatures("Leather seats")
                 .build();
-        System.out.println(p.toString());
-        Pizza p2 = Pizza.builder().addTopping("Potato").addTopping("Mushroom").setSize("Medium")
-                .setCrustType("Thick        ").build();
-        System.out.println(p2.toString());
+        System.out.println(car.toString());
     }
 }
